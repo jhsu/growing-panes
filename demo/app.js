@@ -10,7 +10,7 @@ GrowingPanes.config(function($stateProvider, $urlRouterProvider){
   $stateProvider
   .state('home', {
     url: '/home',
-    templateUrl: '/demo/home.html',
+    templateUrl: './home.html',
     controller: ['$scope', '$state', function($scope, $state) {
       $scope.state = $state;
     }],
@@ -18,17 +18,17 @@ GrowingPanes.config(function($stateProvider, $urlRouterProvider){
   })
   .state('home.details', {
     url: '/details',
-    templateUrl: '/demo/home.details.html',
+    templateUrl: './home.details.html',
     data: {depth: 2},
   })
   .state('home.details.form', {
     url: '/form',
-    templateUrl: '/demo/home.details.form.html',
+    templateUrl: './home.details.form.html',
     data: {depth: 3},
   })
   .state('home.details.form.preview', {
     url: '/preview',
-    templateUrl: '/demo/home.details.form.preview.html',
+    templateUrl: './home.details.form.preview.html',
     data: {depth: 4, paneLimit: 3},
   })
   ;
