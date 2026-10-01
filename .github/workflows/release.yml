@@ -26,8 +26,8 @@ jobs:
       - uses: changesets/action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          publish-script: pnpm release
-          version-script: pnpm version
+          publish-script: pnpm run release
+          version-script: pnpm run version
           pr-base-branch: main
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
