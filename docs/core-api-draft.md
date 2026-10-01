@@ -136,7 +136,7 @@ interface PaneManagerConfig {
 }
 ```
 
-`meta` is intentionally opaque. A React, Vue, Angular, terminal, or native
+`meta` is intentionally opaque. A React, Vue, terminal, or native
 adapter could use it for labels, component identifiers, preferred sizes, or
 animation hints without making those concepts dependencies of the core.
 
@@ -296,7 +296,7 @@ stack to navigate back. It can be changed with `minimumDepth`.
 
 - DOM elements and component references
 - CSS classes, widths, and animation implementation
-- Angular, React, Vue, or other framework lifecycle behavior
+- React, Vue, or other framework lifecycle behavior
 - browser history and URL parsing
 - server requests and loading/error states
 - persistence format

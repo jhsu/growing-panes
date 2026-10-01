@@ -5,9 +5,6 @@ Headless stack-based pane navigation for JavaScript and TypeScript.
 Growing Panes manages pane definitions, navigation state, and the set of panes
 that should be displayed. It does not require a DOM, router, or UI framework.
 
-> The original AngularJS implementation and demo remain in the repository for
-> reference. The package entry point now exposes the headless core.
-
 ## Install
 
 ```sh

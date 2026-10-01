@@ -1,6 +1,6 @@
 {
   "name": "growing-panes",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Headless stack-based pane navigation for JavaScript and TypeScript",
   "type": "module",
   "main": "./dist/index.cjs",
