@@ -5,8 +5,10 @@
     "moduleResolution": "Bundler",
     "baseUrl": ".",
     "paths": {
-      "growing-panes": ["./src/index.ts"]
+      "growing-panes": ["./src/index.ts"],
+      "growing-panes/react": ["./src/react.ts"]
     },
+    "jsx": "react-jsx",
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
@@ -15,5 +17,13 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "test/**/*.ts", "examples/**/*.ts"]
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "examples/**/*.ts",
+    "site/src/**/*.ts",
+    "site/src/**/*.tsx",
+    "vite.config.ts",
+    "vitest.config.ts"
+  ]
 }

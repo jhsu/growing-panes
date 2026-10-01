@@ -5,6 +5,8 @@ Headless stack-based pane navigation for JavaScript and TypeScript.
 Growing Panes manages pane definitions, navigation state, and the set of panes
 that should be displayed. It does not require a DOM, router, or UI framework.
 
+[View the interactive demo](https://jhsu.github.io/growing-panes/).
+
 ## Install
 
 ```sh
@@ -148,6 +150,7 @@ React 18 or newer is required for these hooks.
 pnpm install
 pnpm check
 pnpm changeset
+pnpm site:dev
 ```
 
 The fuller design discussion is in

@@ -39,7 +39,10 @@
     "build": "tsup src/index.ts src/react.ts --format esm,cjs --dts --clean --external react",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "check": "pnpm typecheck && pnpm test && pnpm build",
+    "check": "pnpm typecheck && pnpm test && pnpm build && pnpm site:build",
+    "site:dev": "vite --config vite.config.ts",
+    "site:build": "vite build --config vite.config.ts",
+    "site:preview": "vite preview --config vite.config.ts",
     "changeset": "changeset",
     "version": "changeset version",
     "release": "pnpm build && changeset publish"
@@ -51,7 +54,7 @@
   "bugs": {
     "url": "https://github.com/jhsu/growing-panes/issues"
   },
-  "homepage": "https://github.com/jhsu/growing-panes#readme",
+  "homepage": "https://jhsu.github.io/growing-panes/",
   "keywords": [
     "headless",
     "navigation",
@@ -80,6 +83,7 @@
   "devDependencies": {
     "@changesets/cli": "^3.0.3",
     "@testing-library/react": "^16.3.3",
+    "@types/node": "^26.6.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "jsdom": "^30.1.1",
@@ -87,6 +91,7 @@
     "react-dom": "^19.3.0",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
+    "vite": "^8.3.1",
     "vitest": "^5.0.2"
   }
 }
